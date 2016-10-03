@@ -8,27 +8,53 @@
     <script src="bower_components/material-design-lite/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
+
         .wide-card.mdl-card {
-            width: 135px;
-            height: 50px;
+            width: 112px;
         }
         .mdl-card__title-text {
-            font-size: 18px;
+            font-size: 14px;
+            color: #fff;          
         }
         .mdl-card__subtitle-text {
             padding: 5px;
+            font-size: 11px;
+            color: #000;
         }
 
         .mdl-card__menu {
-            top: 3px;
-            right: 3px;   
+            top: -2px;
+            right: -4px;
+            color: #fff;
         }        
         .mdl-card__title {
             padding: 10px 5px 5px 5px;
+            background-color: #3F51B5;
         }
         .mdl-card {
-            min-height: 130px;
-        }        
+            height: 100px;
+            min-height: 100px;
+        }
+        
+        .mdl-card__actions {
+            padding: 2px 2px 2px 6px;
+            text-align: left;
+        }
+
+        .mdl-card__actions a.cup {
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #000;            
+        }
+
+        .mdl-card__actions .mdl-button {
+            font-size: 11px;
+            padding: 0 4px;
+            height: 25px;
+            margin: 0;
+            text-transform: none;
+            line-height: 16px;
+        }
 
     </style>    
 </head>
@@ -37,17 +63,23 @@
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">    
   <main class="mdl-layout__content">    
          <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--2-col graybox">
+            <div class="mdl-cell mdl-cell--1-col graybox">
+                 <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">                
+                    <i class="material-icons md-dark md-48">chevron_left</i>
+                 </button>
+            </div>
+            <div class="mdl-cell mdl-cell--1-col graybox">
+                <!-- INICIO: score /-->
                 <div class="wide-card mdl-card mdl-shadow--2dp">
                     <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">30/09 23:15</h2>
+                        <h2 class="mdl-card__title-text">30/09 23h40</h2>
                     </div>
                     <div class="mdl-card__subtitle-text">
-                        FULERAGI FC<br />
-                        TATICO FC
+                        (02º) FULERAGI FC<br />
+                        (11º) TATICO FC
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Brasileirão 2016</a>
+                        <a class="cup">Série A</a>
                     </div>
                     <div class="mdl-card__menu">
                         <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
@@ -55,46 +87,205 @@
                         </button>
                     </div>
                 </div>
+                <!-- FIM: score /-->
             </div>
-            <div class="mdl-cell mdl-cell--2-col graybox">
-                2
+            <div class="mdl-cell mdl-cell--1-col graybox">
+                <!-- INICIO: score /-->
+                <div class="wide-card mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">30/09 23h40</h2>
+                    </div>
+                    <div class="mdl-card__subtitle-text">
+                        (02º) FULERAGI FC<br />
+                        (11º) TATICO FC
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="cup">Série A</a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons md-18">date_range</i>
+                        </button>
+                    </div>
+                </div>
+                <!-- FIM: score /-->
             </div>
-            <div class="mdl-cell mdl-cell--2-col graybox">
-                3
+            <div class="mdl-cell mdl-cell--1-col graybox">
+                <!-- INICIO: score /-->
+                <div class="wide-card mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">30/09 23h40</h2>
+                    </div>
+                    <div class="mdl-card__subtitle-text">
+                        (02º) FULERAGI FC<br />
+                        (11º) TATICO FC
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="cup">Série A</a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons md-18">date_range</i>
+                        </button>
+                    </div>
+                </div>
+                <!-- FIM: score /-->
             </div>
-            <div class="mdl-cell mdl-cell--2-col graybox">
-                4
+            <div class="mdl-cell mdl-cell--1-col graybox">
+                <!-- INICIO: score /-->
+                <div class="wide-card mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">30/09 23h40</h2>
+                    </div>
+                    <div class="mdl-card__subtitle-text">
+                        (02º) FULERAGI FC<br />
+                        (11º) TATICO FC
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="cup">Série A</a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons md-18">date_range</i>
+                        </button>
+                    </div>
+                </div>
+                <!-- FIM: score /-->
             </div>
-            <div class="mdl-cell mdl-cell--2-col graybox">
-                5
+            <div class="mdl-cell mdl-cell--1-col graybox">
+                <!-- INICIO: score /-->
+                <div class="wide-card mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">30/09 23h40</h2>
+                    </div>
+                    <div class="mdl-card__subtitle-text">
+                        (02º) FULERAGI FC<br />
+                        (11º) TATICO FC
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="cup">Série A</a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons md-18">date_range</i>
+                        </button>
+                    </div>
+                </div>
+                <!-- FIM: score /-->
             </div>
-            <div class="mdl-cell mdl-cell--2-col graybox">
-                6
+            <div class="mdl-cell mdl-cell--1-col graybox">
+                <!-- INICIO: score /-->
+                <div class="wide-card mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">30/09 23h40</h2>
+                    </div>
+                    <div class="mdl-card__subtitle-text">
+                        (02º) FULERAGI FC<br />
+                        (11º) TATICO FC
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="cup">Série A</a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons md-18">date_range</i>
+                        </button>
+                    </div>
+                </div>
+                <!-- FIM: score /-->
             </div>
+            <div class="mdl-cell mdl-cell--1-col graybox">
+                <!-- INICIO: score /-->
+                <div class="wide-card mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">30/09 23h40</h2>
+                    </div>
+                    <div class="mdl-card__subtitle-text">
+                        (02º) FULERAGI FC<br />
+                        (11º) TATICO FC
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="cup">Série A</a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons md-18">date_range</i>
+                        </button>
+                    </div>
+                </div>
+                <!-- FIM: score /-->
+            </div>
+            <div class="mdl-cell mdl-cell--1-col graybox">
+                <!-- INICIO: score /-->
+                <div class="wide-card mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">30/09 23h40</h2>
+                    </div>
+                    <div class="mdl-card__subtitle-text">
+                        (02º) FULERAGI FC<br />
+                        (11º) TATICO FC
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="cup">Série A</a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons md-18">date_range</i>
+                        </button>
+                    </div>
+                </div>
+                <!-- FIM: score /-->
+            </div>
+            <div class="mdl-cell mdl-cell--1-col graybox">
+                <!-- INICIO: score /-->
+                <div class="wide-card mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">30/09 23h40</h2>
+                    </div>
+                    <div class="mdl-card__subtitle-text">
+                        (02º) FULERAGI FC<br />
+                        (11º) TATICO FC
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="cup">Série A</a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons md-18">date_range</i>
+                        </button>
+                    </div>
+                </div>
+                <!-- FIM: score /-->
+            </div>
+            <div class="mdl-cell mdl-cell--1-col graybox">
+                <!-- INICIO: score /-->
+                <div class="wide-card mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">30/09 23h40</h2>
+                    </div>
+                    <div class="mdl-card__subtitle-text">
+                        (02º) FULERAGI FC<br />
+                        (11º) TATICO FC
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="cup">Série A</a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons md-18">date_range</i>
+                        </button>
+                    </div>
+                </div>
+                <!-- FIM: score /-->
+            </div>                                                            
+            <div class="mdl-cell mdl-cell--1-col graybox">
+                 <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">                
+                    <i class="material-icons md-dark md-48">chevron_right</i>
+                 </button>
+            </div>                       
          </div>
   </main>
 </div>  
-
-  <!--div class="scoreboard">
-    <div class="wide-card.mdl-card mdl-card mdl-shadow--4dp">
-        <div class="mdl-card__title">
-            30/09 23:15
-        </div>
-        <div class="mdl-card__subtitle-text">
-            FULERAGI FC<br />
-            TATICO FC
-        </div>
-    </div>
-    <div class="wide-card.mdl-card mdl-card mdl-shadow--4dp">
-        <div class="mdl-card__title">
-            30/09 23:15
-        </div>
-        <div class="mdl-card__subtitle-text">
-            FULERAGI FC<br />
-            TATICO FC
-        </div>
-    </div>    
-  </div-->
 
 </body>
 
