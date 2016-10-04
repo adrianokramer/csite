@@ -7,9 +7,12 @@
         <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
         <script src="bower_components/material-design-lite/material.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-amber.min.css" />
+        <link rel="stylesheet" href="mui-0.9.0/css/mui.min.css">
+        
             <style>
                 .wide-card.mdl-card {
-                    width: 108px;
+                    width: 98px;
                     background-color: #FFC107;
                 }
                 .mdl-card__title-text {
@@ -18,13 +21,13 @@
                 }
                 .mdl-card__subtitle-text {
                     padding: 3px;
-                    font-size: 11px;
+                    font-size: 10px;
                     color: #000;
                 }
 
                 .mdl-card__menu {
                     top: -4px;
-                    right: -2px;
+                    right: -4px;
                     color: #fff;
                 }        
                 .mdl-card__title {
@@ -32,8 +35,8 @@
                     background-color: #3F51B5;
                 }
                 .mdl-card {
-                    height: 112px;
-                    min-height: 112px;
+                    height: 94px;
+                    min-height: 94px;
                 }
                 
                 .mdl-card__actions {
@@ -67,6 +70,10 @@
                 .secondary-text-color  { color: #757575; }
                 .divider-color         { border-color: #BDBDBD; }        
 
+                .mdl-cell--1-col {
+                    /*border: 1px solid red;*/
+                }
+
             </style>    
 </head>
 
@@ -74,10 +81,10 @@
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">    
   <main class="mdl-layout__content">  
          <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--1-col graybox">
-                 <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">                
+            <div class="mdl-cell mdl-cell--1-col graybox mui--text-center mui--appbar-height mui--appbar-line-height">
+                 <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored">                
                     <i class="material-icons md-dark md-48">chevron_left</i>
-                 </button>
+                 </button>             
             </div>
             <div class="mdl-cell mdl-cell--1-col graybox">
                 <!-- INICIO: score /-->
@@ -299,8 +306,8 @@
                 </div>
                 <!-- FIM: score /-->
             </div>                                                            
-            <div class="mdl-cell mdl-cell--1-col graybox">
-                 <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">                
+            <div class="mdl-cell mdl-cell--1-col graybox mui--text-center mui--appbar-height mui--appbar-line-height">
+                 <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored">                  
                     <i class="material-icons md-dark md-48">chevron_right</i>
                  </button>
             </div>                       
