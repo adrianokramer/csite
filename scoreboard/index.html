@@ -1,69 +1,78 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Scoreboard</title>
-    <meta charset="utf-8">
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
-    <script src="bower_components/material-design-lite/material.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <style>
+    <head>
+        <title>Scoreboard</title>
+        <meta charset="utf-8">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
+        <script src="bower_components/material-design-lite/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+            <style>
+                .wide-card.mdl-card {
+                    width: 108px;
+                    background-color: #FFC107;
+                }
+                .mdl-card__title-text {
+                    font-size: 12px;
+                    color: #fff;          
+                }
+                .mdl-card__subtitle-text {
+                    padding: 3px;
+                    font-size: 11px;
+                    color: #000;
+                }
 
-        .wide-card.mdl-card {
-            width: 112px;
-        }
-        .mdl-card__title-text {
-            font-size: 14px;
-            color: #fff;          
-        }
-        .mdl-card__subtitle-text {
-            padding: 5px;
-            font-size: 11px;
-            color: #000;
-        }
+                .mdl-card__menu {
+                    top: -4px;
+                    right: -2px;
+                    color: #fff;
+                }        
+                .mdl-card__title {
+                    padding: 6px 5px 5px 3px;
+                    background-color: #3F51B5;
+                }
+                .mdl-card {
+                    height: 112px;
+                    min-height: 112px;
+                }
+                
+                .mdl-card__actions {
+                    padding: 2px 2px 2px 3px;
+                    text-align: left;
+                }
 
-        .mdl-card__menu {
-            top: -2px;
-            right: -4px;
-            color: #fff;
-        }        
-        .mdl-card__title {
-            padding: 10px 5px 5px 5px;
-            background-color: #3F51B5;
-        }
-        .mdl-card {
-            height: 120px;
-            min-height: 120px;
-        }
-        
-        .mdl-card__actions {
-            padding: 2px 2px 2px 6px;
-            text-align: left;
-        }
+                .mdl-card__actions a.cup {
+                    font-size: 11px;
+                    text-transform: capitalize;
+                    color: #757575;
+                    display:block;
+                    height: 15px;          
+                }
 
-        .mdl-card__actions a.cup {
-            font-size: 13px;
-            text-transform: uppercase;
-            color: #b0b0b0;
-            display:block;
-            height: 15px;          
-        }
+                .mdl-card__actions .mdl-button {
+                    font-size: 8px;
+                    padding: 0 4px;
+                    height: 25px;
+                    margin: 0;
+                    text-transform: none;
+                    line-height: 16px;
+                }
 
-        .mdl-card__actions .mdl-button {
-            font-size: 11px;
-            padding: 0 4px;
-            height: 25px;
-            margin: 0;
-            text-transform: none;
-            line-height: 16px;
-        }
+                .dark-primary-color    { background: #303F9F; }
+                .default-primary-color { background: #3F51B5; }
+                .light-primary-color   { background: #C5CAE9; }
+                .text-primary-color    { color: #FFFFFF; }
+                .accent-color          { background: #FFC107; }
+                .primary-text-color    { color: #212121; }
+                .secondary-text-color  { color: #757575; }
+                .divider-color         { border-color: #BDBDBD; }        
 
-    </style>    
+            </style>    
 </head>
 
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">    
-  <main class="mdl-layout__content">    
+  <main class="mdl-layout__content">  
          <div class="mdl-grid">
             <div class="mdl-cell mdl-cell--1-col graybox">
                  <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">                
