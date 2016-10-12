@@ -11,20 +11,26 @@
         <link rel="stylesheet" href="mui-0.9.0/css/mui.min.css">
         
             <style>
-
-                div.scoreboard {
-                    font-family: Calibri;
-                }
-
-                button {
-                    font-family: "Roboto","Helvetica","Arial",sans-serif!important;
+                
+                @font-face {
+                    font-family: 'Calibri';
+                    font-style: normal;
+                    font-weight: 700;
+                    src: local('Calibri Bold'), local('Calibri-Bold'), url(https://fonts.gstatic.com/l/font?kit=cCwcoZCh95jEfkePtzfl9_k_vArhqVIZ0nv9q090hN8&skey=cd2dd6afe6bf0eb2&v=v8) format('woff2');
+                    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
                 }
 
                 .wide-card.mdl-card {
-                    width: 98px;
+                    width: 136px;
                     /*background-color: #FFC107;*/
                     background-color: #dcdee0;
+                    display: flex;
                 }
+                
+                .mdl-card__title-text, .mdl-card__subtitle-text,  .mdl-card__menu, .mdl-card__actions a.cup, .mdl-card__actions .mdl-button {
+                    font-family: 'Calibri';
+                }
+
                 .mdl-card__title-text {
                     font-weight: bold;
                     font-size: 14px;
@@ -136,31 +142,6 @@
                         </div>
                     </div>
                     <!-- FIM: score /-->
-                </div>
-                <div class="mdl-cell mdl-cell--1-col graybox">
-                    <!-- INICIO: score /-->
-                    <div class="wide-card mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">9/28</h2>
-                        </div>
-                        <div class="mdl-card__subtitle-text">
-                            (02º) FULERAGI FC
-                            (11º) TATICO FC
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="cup">Série A</a>
-                            <a class="cup">Brasileirão</a>
-                        </div>
-                        <div class="mdl-card__menu">
-                            23h15
-                            <!--button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">                            
-                                <i class="material-icons md-18">date_range</i>
-                            <button-->
-                        </div>
-                    </div>
-                    <!-- FIM: score /-->
-                </div>
-                <div class="mdl-cell mdl-cell--1-col graybox">
                     <!-- INICIO: score /-->
                     <div class="wide-card mdl-card mdl-shadow--2dp">
                         <div class="mdl-card__title">
@@ -181,169 +162,8 @@
                             <button-->
                         </div>
                     </div>
-                    <!-- FIM: score /-->
-                </div>
-                <div class="mdl-cell mdl-cell--1-col graybox">
-                    <!-- INICIO: score /-->
-                    <div class="wide-card mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__title blue">
-                            <h2 class="mdl-card__title-text">9/28</h2>
-                        </div>
-                        <div class="mdl-card__subtitle-text">
-                            (02º) FULERAGI FC<br />
-                            (11º) TATICO FC
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="cup">Série A</a>
-                            <a class="cup">Brasileirão</a>
-                        </div>
-                        <div class="mdl-card__menu">
-                            23h15
-                            <!--button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">                            
-                                <i class="material-icons md-18">date_range</i>
-                            <button-->
-                        </div>
-                    </div>
-                    <!-- FIM: score /-->
-                </div>
-                <div class="mdl-cell mdl-cell--1-col graybox">
-                    <!-- INICIO: score /-->
-                    <div class="wide-card mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__title green">
-                            <h2 class="mdl-card__title-text">9/28</h2>
-                        </div>
-                        <div class="mdl-card__subtitle-text">
-                            (02º) FULERAGI FC<br />
-                            (11º) TATICO FC
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="cup">Série A</a>
-                            <a class="cup">Brasileirão</a>
-                        </div>
-                        <div class="mdl-card__menu">
-                            23h15
-                            <!--button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">                            
-                                <i class="material-icons md-18">date_range</i>
-                            <button-->
-                        </div>
-                    </div>
-                    <!-- FIM: score /-->
-                </div>
-                <div class="mdl-cell mdl-cell--1-col graybox">
-                    <!-- INICIO: score /-->
-                    <div class="wide-card mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__title yellow">
-                            <h2 class="mdl-card__title-text">9/28</h2>
-                        </div>
-                        <div class="mdl-card__subtitle-text">
-                            (02º) FULERAGI FC<br />
-                            (11º) TATICO FC
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="cup">Série A</a>
-                            <a class="cup">Brasileirão</a>
-                        </div>
-                        <div class="mdl-card__menu">
-                            23h15
-                            <!--button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">                            
-                                <i class="material-icons md-18">date_range</i>
-                            <button-->
-                        </div>
-                    </div>
-                    <!-- FIM: score /-->
-                </div>
-                <div class="mdl-cell mdl-cell--1-col graybox">
-                    <!-- INICIO: score /-->
-                    <div class="wide-card mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">9/28</h2>
-                        </div>
-                        <div class="mdl-card__subtitle-text">
-                            (02º) FULERAGI FC<br />
-                            (11º) TATICO FC
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="cup">Série A</a>
-                            <a class="cup">Brasileirão</a>
-                        </div>
-                        <div class="mdl-card__menu">
-                            23h15
-                            <!--button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">                            
-                                <i class="material-icons md-18">date_range</i>
-                            <button-->
-                        </div>
-                    </div>
-                    <!-- FIM: score /-->
-                </div>
-                <div class="mdl-cell mdl-cell--1-col graybox">
-                    <!-- INICIO: score /-->
-                    <div class="wide-card mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">9/28</h2>
-                        </div>
-                        <div class="mdl-card__subtitle-text">
-                            (02º) FULERAGI FC<br />
-                            (11º) TATICO FC
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="cup">Série A</a>
-                            <a class="cup">Brasileirão</a>
-                        </div>
-                        <div class="mdl-card__menu">
-                            23h15
-                            <!--button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">                            
-                                <i class="material-icons md-18">date_range</i>
-                            <button-->
-                        </div>
-                    </div>
-                    <!-- FIM: score /-->
-                </div>
-                <div class="mdl-cell mdl-cell--1-col graybox">
-                    <!-- INICIO: score /-->
-                    <div class="wide-card mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">9/28</h2>
-                        </div>
-                        <div class="mdl-card__subtitle-text">
-                            (02º) FULERAGI FC<br />
-                            (11º) TATICO FC
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="cup">Série A</a>
-                            <a class="cup">Brasileirão</a>
-                        </div>
-                        <div class="mdl-card__menu">
-                            23h15
-                            <!--button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">                            
-                                <i class="material-icons md-18">date_range</i>
-                            <button-->
-                        </div>
-                    </div>
-                    <!-- FIM: score /-->
-                </div>
-                <div class="mdl-cell mdl-cell--1-col graybox">
-                    <!-- INICIO: score /-->
-                    <div class="wide-card mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">9/28</h2>
-                        </div>
-                        <div class="mdl-card__subtitle-text">
-                            (02º) FULERAGI FC<br />
-                            (11º) TATICO FC
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="cup">Série A</a>
-                            <a class="cup">Brasileirão</a>
-                        </div>
-                        <div class="mdl-card__menu">
-                            23h15
-                            <!--button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">                            
-                                <i class="material-icons md-18">date_range</i>
-                            <button-->
-                        </div>
-                    </div>
-                    <!-- FIM: score /-->
-                </div>                                                            
+                    <!-- FIM: score /-->                    
+                </div>                                                          
                 <div class="mdl-cell mdl-cell--1-col graybox mui--text-center mui--appbar-height mui--appbar-line-height">
                     <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored">                  
                         <i class="material-icons md-dark md-48">chevron_right</i>

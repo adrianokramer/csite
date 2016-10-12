@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scoreboard</title>
+        <meta charset="utf-8">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
+        <script src="bower_components/material-design-lite/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-amber.min.css" />
+        <link rel="stylesheet" href="mui-0.9.0/css/mui.min.css">
+        
+            <style>
+                
+                @font-face {
+                    font-family: 'Calibri';
+                    font-style: normal;
+                    font-weight: 700;
+                    src: local('Calibri Bold'), local('Calibri-Bold'), url(https://fonts.gstatic.com/l/font?kit=cCwcoZCh95jEfkePtzfl9_k_vArhqVIZ0nv9q090hN8&skey=cd2dd6afe6bf0eb2&v=v8) format('woff2');
+                    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+                }
+                
+                .mdl-card__title-text, .mdl-card__subtitle-text,  .mdl-card__menu, .mdl-card__actions a.cup, .mdl-card__actions .mdl-button {
+                    font-family: 'Calibri';
+                }
+
+                .scoreboard {
+                    display: -webkit-flex;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    -webkit-flex-flow: row nowrap;
+                    align-items: center;
+                    -webkit-align-items: center;
+                    -webkit-align-content: space-around; /* Safari */
+                    align-content: space-around;
+                    margin: 5px 0;                    
+                }
+
+                div.score {
+                    -webkit-flex:1 1 auto;
+                    flex:1 1 auto;
+                    align-content: flex-start;
+                    width: 136px;
+                    min-height: 94px; 
+                    background: #dcdee0;
+                    margin: 0 2px 0 2px;
+                    font-family: 'Calibri';
+                }
+
+                div.score div.header {
+                    background: #000;
+                    color: #fff;
+                    padding: 3px;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+
+                div.score .data {
+                    
+                }
+
+                div.score .hora {
+                    float: right;
+                }
+
+                div.score div.teams {                    
+                    padding: 3px;
+                    min-width: 400px;                    
+                    font-size: 15.56px;                                        
+                }
+
+                div.score div.teams div.teamWin {                    
+                    font-weight: bold;
+                }
+
+                div.score div.teams span.score {
+                     
+                 }
+
+                div.score div.cup {
+                    padding: 3px;
+                    font-size: 14px;
+                    color: #7c7c7c;
+                    font-weight:normal;
+                }
+
+                div.score hr {
+                    margin: 0 7px;
+
+                }
+    
+                edsonjunior.com/um-guia-visual-para-flexbox/
+            </style>    
+</head>
+
+<body>
+
+    <div class="scoreboard">
+        <div class="score">
+            <div class="header">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                Brasileirão
+                Série A
+            </div>
+        </div>
+        <div class="score">
+            <div class="header">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                Brasileirão
+                Série A
+            </div>
+        </div>
+        <div class="score">
+            <div class="header">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                Brasileirão
+                Série A
+            </div>
+        </div>
+        <div class="score">
+            <div class="header">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                Brasileirão
+                Série A
+            </div>
+        </div>
+        <div class="score">
+            <div class="header">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                Brasileirão
+                Série A
+            </div>
+        </div> 
+        <div class="score">
+            <div class="header">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                Brasileirão
+                Série A
+            </div>
+        </div> 
+        <div class="score">
+            <div class="header">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                Brasileirão
+                Série A
+            </div>
+        </div> 
+        <div class="score">
+            <div class="header">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                Brasileirão
+                Série A
+            </div>
+        </div> 
+        <div class="score">
+            <div class="header">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                Brasileirão
+                Série A
+            </div>
+        </div> 
+        <div class="score">
+            <div class="header">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                Brasileirão
+                Série A
+            </div>
+        </div>                                                                                                                                       
+    </div>
+
+</body>
+
+</html>
+
