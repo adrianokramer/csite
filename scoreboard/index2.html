@@ -15,8 +15,8 @@
                 @font-face {
                     font-family: 'Calibri';
                     font-style: normal;
-                    font-weight: 700;
-                    src: local('Calibri Bold'), local('Calibri-Bold'), url(https://fonts.gstatic.com/l/font?kit=cCwcoZCh95jEfkePtzfl9_k_vArhqVIZ0nv9q090hN8&skey=cd2dd6afe6bf0eb2&v=v8) format('woff2');
+                    font-weight: 400;
+                    src: local('Calibri'), url(https://fonts.gstatic.com/l/font?kit=YH3ek_qpdaY7ILI-bfzlYQ&skey=a1029226f80653a8&v=v8) format('woff2');
                     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
                 }
                 
@@ -33,7 +33,6 @@
                     -webkit-align-items: center;
                     -webkit-align-content: space-around; /* Safari */
                     align-content: space-around;
-                    margin: 5px 0;                    
                 }
 
                 div.score {
@@ -43,7 +42,7 @@
                     width: 136px;
                     min-height: 94px; 
                     background: #dcdee0;
-                    margin: 0 2px 0 2px;
+                    margin: 5px 2px 0 2px;
                     font-family: 'Calibri';
                 }
 
@@ -51,9 +50,21 @@
                     background: #000;
                     color: #fff;
                     padding: 3px;
-                    font-size: 14px;
+                    font-size: 13.96px;
                     font-weight: bold;
                 }
+
+                div.score div.header.blue {
+                    background: #0e4482;
+                }
+
+                div.score div.header.yellow {
+                    background: #eebd14;
+                }                
+                
+                div.score div.header.green {
+                    background: #068e06;
+                } 
 
                 div.score .data {
                     
@@ -64,8 +75,7 @@
                 }
 
                 div.score div.teams {                    
-                    padding: 3px;
-                    min-width: 400px;                    
+                    padding: 3px;                   
                     font-size: 15.56px;                                        
                 }
 
@@ -73,20 +83,27 @@
                     font-weight: bold;
                 }
 
+                div.score div.teams div.team {
+                    font-weight: normal;
+                }
+
                 div.score div.teams span.score {
-                     
-                 }
+                    float: right;     
+                }
 
                 div.score div.cup {
                     padding: 3px;
-                    font-size: 14px;
+                    font-size: 14.56px;
                     color: #7c7c7c;
                     font-weight:normal;
                 }
 
                 div.score hr {
                     margin: 0 7px;
+                }
 
+                div.torneio div.serie {
+                    margin: 0;
                 }
     
                 edsonjunior.com/um-guia-visual-para-flexbox/
@@ -113,8 +130,71 @@
             </div>
             <hr />
             <div class="cup">
-                Brasileirão
-                Série A
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
+            </div>
+        </div>
+        <div class="score">
+            <div class="header blue">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
+            </div>
+        </div>
+        <div class="score">
+            <div class="header yellow">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
+            </div>
+        </div>
+        <div class="score">
+            <div class="header green">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
             </div>
         </div>
         <div class="score">
@@ -134,71 +214,8 @@
             </div>
             <hr />
             <div class="cup">
-                Brasileirão
-                Série A
-            </div>
-        </div>
-        <div class="score">
-            <div class="header">
-                <span class="data">9/28</span>
-                <span class="hora">23h15</span>
-            </div>
-            <div class="teams">
-                <div class="teamWin">
-                    <span class="team">Fuleragi FC</span>
-                    <span class="score">4</span>                
-                </div>                
-                <div class="team">
-                    <span class="team">Turma do Danone</span>
-                    <span class="score">1</span>
-                </div>                
-            </div>
-            <hr />
-            <div class="cup">
-                Brasileirão
-                Série A
-            </div>
-        </div>
-        <div class="score">
-            <div class="header">
-                <span class="data">9/28</span>
-                <span class="hora">23h15</span>
-            </div>
-            <div class="teams">
-                <div class="teamWin">
-                    <span class="team">Fuleragi FC</span>
-                    <span class="score">4</span>                
-                </div>                
-                <div class="team">
-                    <span class="team">Turma do Danone</span>
-                    <span class="score">1</span>
-                </div>                
-            </div>
-            <hr />
-            <div class="cup">
-                Brasileirão
-                Série A
-            </div>
-        </div>
-        <div class="score">
-            <div class="header">
-                <span class="data">9/28</span>
-                <span class="hora">23h15</span>
-            </div>
-            <div class="teams">
-                <div class="teamWin">
-                    <span class="team">Fuleragi FC</span>
-                    <span class="score">4</span>                
-                </div>                
-                <div class="team">
-                    <span class="team">Turma do Danone</span>
-                    <span class="score">1</span>
-                </div>                
-            </div>
-            <hr />
-            <div class="cup">
-                Brasileirão
-                Série A
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
             </div>
         </div> 
         <div class="score">
@@ -218,8 +235,8 @@
             </div>
             <hr />
             <div class="cup">
-                Brasileirão
-                Série A
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
             </div>
         </div> 
         <div class="score">
@@ -239,8 +256,8 @@
             </div>
             <hr />
             <div class="cup">
-                Brasileirão
-                Série A
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
             </div>
         </div> 
         <div class="score">
@@ -260,8 +277,8 @@
             </div>
             <hr />
             <div class="cup">
-                Brasileirão
-                Série A
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
             </div>
         </div> 
         <div class="score">
@@ -281,8 +298,8 @@
             </div>
             <hr />
             <div class="cup">
-                Brasileirão
-                Série A
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
             </div>
         </div> 
         <div class="score">
@@ -302,8 +319,8 @@
             </div>
             <hr />
             <div class="cup">
-                Brasileirão
-                Série A
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
             </div>
         </div>                                                                                                                                       
     </div>
