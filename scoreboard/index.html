@@ -15,164 +15,317 @@
                 @font-face {
                     font-family: 'Calibri';
                     font-style: normal;
-                    font-weight: 700;
-                    src: local('Calibri Bold'), local('Calibri-Bold'), url(https://fonts.gstatic.com/l/font?kit=cCwcoZCh95jEfkePtzfl9_k_vArhqVIZ0nv9q090hN8&skey=cd2dd6afe6bf0eb2&v=v8) format('woff2');
+                    font-weight: 400;
+                    src: local('Calibri'), url(https://fonts.gstatic.com/l/font?kit=YH3ek_qpdaY7ILI-bfzlYQ&skey=a1029226f80653a8&v=v8) format('woff2');
                     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-                }
-
-                .wide-card.mdl-card {
-                    width: 136px;
-                    /*background-color: #FFC107;*/
-                    background-color: #dcdee0;
-                    display: flex;
                 }
                 
                 .mdl-card__title-text, .mdl-card__subtitle-text,  .mdl-card__menu, .mdl-card__actions a.cup, .mdl-card__actions .mdl-button {
                     font-family: 'Calibri';
                 }
 
-                .mdl-card__title-text {
-                    font-weight: bold;
-                    font-size: 14px;
-                    color: #fff;          
-                }
-                .mdl-card__subtitle-text {
-                    padding: 3px;
-                    font-size: 12px;
-                    font-weight: bold;
-                    color: #000;
+                .scoreboard {
+                    display: -webkit-flex;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    -webkit-flex-flow: row nowrap;
+                    align-items: center;
+                    -webkit-align-items: center;
+                    -webkit-align-content: space-around; /* Safari */
+                    align-content: space-around;
                 }
 
-                .mdl-card__menu {
-                    top: 3px;
-                    right: 4px;
+                div.score {
+                    -webkit-flex:1 1 auto;
+                    flex:1 1 auto;
+                    align-content: flex-start;
+                    width: 136px;
+                    min-height: 94px; 
+                    background: #dcdee0;
+                    margin: 5px 2px 0 2px;
+                    font-family: 'Calibri';
+                }
+
+                div.score div.header {
+                    background: #000;
                     color: #fff;
-                    font-size: 14px;
+                    padding: 3px;
+                    font-size: 13.96px;
                     font-weight: bold;
-                }        
-                .mdl-card__title {
-                    padding: 6px 5px 5px 3px;
-                    background-color: #000;
                 }
 
-                .mdl-card__title.blue {
-                    background-color: #0e4482;
+                div.score div.header.blue {
+                    background: #0e4482;
                 }
 
-                .mdl-card__title.green {
-                    background-color: #068e06;
+                div.score div.header.yellow {
+                    background: #eebd14;
                 }                
+                
+                div.score div.header.green {
+                    background: #068e06;
+                } 
 
-                .mdl-card__title.yellow {
-                    background-color: #eebd14;
+                div.score .data {
+                    
                 }
 
-                .mdl-card {
-                    height: 94px;
-                    min-height: 94px;
+                div.score .hora {
+                    float: right;
+                }
+
+                div.score div.teams {                    
+                    padding: 3px;                   
+                    font-size: 15.56px;
+                    line-height: 16px;
+                    letter-spacing: 1px;                                     
+                }
+
+                div.score div.teams div.teamWin {                    
+                    font-weight: bold;
+                }
+
+                div.score div.teams div.team {
+                    font-weight: normal;
+                }
+
+                div.score div.teams span.score {
+                    float: right;   
+                }
+
+                div.score div.cup {
+                    padding: 3px 3px 5px 3px;
+                    font-size: 14.56px;
+                    color: #7c7c7c;
+                    font-weight:normal;
+                }
+
+                div.score hr {
+                    margin: -1px 5px;
+                }
+
+                div.torneio, div.serie {
+                    margin: 0;
+                    padding: 0;
+                    height: 16px;
                 }
                 
-                .mdl-card__actions {
-                    padding: 2px 2px 2px 3px;
-                    text-align: left;
+                div.btLeft, div.btRight {
+                    margin: 0 3px;
                 }
-
-                .mdl-card__actions a.cup {
-                    font-size: 12px;
-                    text-transform: capitalize;
-                    color: #7c7c7c;
-                    display:block;
-                    height: 15px;          
-                }
-
-                .mdl-card__actions .mdl-button {
-                    font-size: 8px;
-                    padding: 0 4px;
-                    height: 25px;
-                    margin: 0;
-                    text-transform: none;
-                    line-height: 16px;
-                }
-
-                .dark-primary-color    { background: #303F9F; }
-                .default-primary-color { background: #3F51B5; }
-                .light-primary-color   { background: #C5CAE9; }
-                .text-primary-color    { color: #FFFFFF; }
-                .accent-color          { background: #FFC107; }
-                .primary-text-color    { color: #212121; }
-                .secondary-text-color  { color: #757575; }
-                .divider-color         { border-color: #BDBDBD; }        
-
-                .mdl-cell--1-col {
-                    /*border: 1px solid red;*/
+                
+                div.btLeft .mdl-button--fab, div.btRight .mdl-button--fab {
+                    height: 35px;
+                    min-width: 35px;
+                    width: 35px;
                 }
 
             </style>    
 </head>
 
 <body>
-<div class="scoreboard">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">    
-    <main class="mdl-layout__content">  
-            <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell--1-col graybox mui--text-center mui--appbar-height mui--appbar-line-height">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored">                
-                        <i class="material-icons md-dark md-48">chevron_left</i>
-                    </button>             
-                </div>
-                <div class="mdl-cell mdl-cell--1-col graybox">
-                    <!-- INICIO: score /-->
-                    <div class="wide-card mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">9/28</h2>
-                        </div>
-                        <div class="mdl-card__subtitle-text">
-                            (02º) FULERAGI FC<br />
-                            (11º) TATICO FC
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="cup">Série A</a>
-                            <a class="cup">Brasileirão</a>
-                        </div>
-                        <div class="mdl-card__menu">
-                            23h15
-                            <!--button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">                            
-                                <i class="material-icons md-18">date_range</i>
-                            <button-->
-                        </div>
-                    </div>
-                    <!-- FIM: score /-->
-                    <!-- INICIO: score /-->
-                    <div class="wide-card mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">9/28</h2>
-                        </div>
-                        <div class="mdl-card__subtitle-text">
-                            (02º) FULERAGI FC<br />
-                            (11º) TATICO FC
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="cup">Série A</a>
-                            <a class="cup">Brasileirão</a>
-                        </div>
-                        <div class="mdl-card__menu">
-                            23h15
-                            <!--button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">                            
-                                <i class="material-icons md-18">date_range</i>
-                            <button-->
-                        </div>
-                    </div>
-                    <!-- FIM: score /-->                    
-                </div>                                                          
-                <div class="mdl-cell mdl-cell--1-col graybox mui--text-center mui--appbar-height mui--appbar-line-height">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored">                  
-                        <i class="material-icons md-dark md-48">chevron_right</i>
-                    </button>
-                </div>                       
+
+    <div class="scoreboard">
+        <div class="btLeft">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored">                
+                <i class="material-icons md-dark md-48">chevron_left</i>
+            </button>            
+        </div>
+        <div class="score">
+            <div class="header">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
             </div>
-    </main>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
+            </div>
+        </div>
+        <div class="score">
+            <div class="header blue">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
+            </div>
+        </div>
+        <div class="score">
+            <div class="header yellow">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
+            </div>
+        </div>
+        <div class="score">
+            <div class="header green">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
+            </div>
+        </div>
+        <div class="score">
+            <div class="header">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
+            </div>
+        </div> 
+        <div class="score">
+            <div class="header">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
+            </div>
+        </div> 
+        <div class="score">
+            <div class="header">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
+            </div>
+        </div> 
+        <div class="score">
+            <div class="header">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
+            </div>
+        </div> 
+        <div class="score">
+            <div class="header">
+                <span class="data">9/28</span>
+                <span class="hora">23h15</span>
+            </div>
+            <div class="teams">
+                <div class="teamWin">
+                    <span class="team">Fuleragi FC</span>
+                    <span class="score">4</span>                
+                </div>                
+                <div class="team">
+                    <span class="team">Turma do Danone</span>
+                    <span class="score">1</span>
+                </div>                
+            </div>
+            <hr />
+            <div class="cup">
+                <div class="torneio">Brasileirão</div>
+                <div class="serie">Série A</div>
+            </div>
+        </div> 
+        <div class="btRight">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored">                  
+                <i class="material-icons md-dark md-48">chevron_right</i>
+            </button>
+        </div>                                                                                                                                               
     </div>
-</div>  
 
 </body>
 
