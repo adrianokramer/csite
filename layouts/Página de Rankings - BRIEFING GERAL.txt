@@ -1,0 +1,28 @@
+Página de Rankins - BRIEFING GERAL
+
+-Não fazer Menu e Sub-menu do topo. Trabalhar apenas no miolo neste momento.
+
+-A cor amarela será variável de acordo com a cor selecionada em uma determinada página do site. Na página de campeonato, será amarela. Na página do clube X, será vermelha. Na home, pode ser preta. Na pagina de campeonato de seleções pode ser Cinza. Pensar nesta variação no dev. 
+
+-Substituir circulos pretos no título dos accordions, por icones relevantes
+
+-Não estou enviando imagens de alguns elementos, vou detalhar:
+--Ranking clubes, é o mesmo design do ranking individuais. Só trocando a carta de jogador, pelo escudo do time.
+--aba Mata-Mata, utilizar modelo VPSL (http://vpsleague.com/campeonatos/community-cup-ps4-17/)
+--aba Elencos/Calendário, apenas subtituir design da tabela atual, pela tabela GE
+
+
+#ESTRUTURA FINAL DO MIOLO DA PAGINA DE CAMPEONATOS#
+
+Accordion: Rankings individuais: TOP 15
+
+Accordion: Rankings clubes: TOP 15
+
+Accordion: Dados gerais (icone/aba Tabela; Mata-mata (só aparece quando for copa); Elencos; Calendário; Regulamento)
+
+Accordion: Estatísticas (icone/aba Jogadores, Clubes)
+
+Accordion: Seleção da semana (icone/aba (só aparece quando for copa) Grupo A, Grupo B, Grupo C,..)
+
+Esse briefing, entra no lugar desta página atual (e que a maioria dos dados, ja existe na pagina atual, entao é um re-design)
+http://www.cbfol.com.br/csvp/revolution/pt-BR/tournaments/brasileirao
